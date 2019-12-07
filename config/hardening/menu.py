@@ -108,14 +108,7 @@ class Display_Menu:
                 self.label.set_use_markup(True)
                 self.header.add(self.label)
                 self.vbox.add(self.header)
-
-                # Creates Information Message
-                self.label = gtk.Label('This DVD installs CentOS 7 in a hardened configuration.')
-                self.vbox.add(self.label)
-		self.label = gtk.Label('CentOS 7 (SSG DVD Installer v.1.0)')
-                self.vbox.add(self.label)
-
-                # Blank Label
+		 # Blank Label
                 self.label = gtk.Label("")
                 self.vbox.add(self.label)    
 
