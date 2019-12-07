@@ -150,7 +150,7 @@ class Display_Menu:
 		self.system_classification.append_text("TOP SECRET")
 		self.system_classification.append_text("TOP SECRET//SCI")
 		self.system_classification.append_text("TOP SECRET//SCI//NOFORN")
-		self.system_classification.set_active(0)
+		self.system_classification.set_active(2)
                 self.classification.pack_start(self.system_classification,False,True,0)
 		self.vbox.add(self.classification)
 
@@ -263,7 +263,7 @@ class Display_Menu:
                 self.encrypt.pack_start(self.label, False, True, 0)
 
 		self.encrypt_disk = gtk.CheckButton('Encrypt Drives with LUKS')
-		self.encrypt_disk.set_active(True)
+		self.encrypt_disk.set_active(False)
 		self.encrypt.pack_start(self.encrypt_disk, False, True, 0)
 
 		self.label = gtk.Label("   ")
@@ -274,7 +274,7 @@ class Display_Menu:
 		self.encrypt.pack_start(self.fips_kernel, False, True, 0)
 
 		self.nousb_kernel = gtk.CheckButton('Disable USB (nousb)')
-		self.nousb_kernel.set_active(False)
+		self.nousb_kernel.set_active(True)
 		self.encrypt.pack_start(self.nousb_kernel, False, True, 0)
 
 		self.lock_root = gtk.CheckButton('Lock root')
